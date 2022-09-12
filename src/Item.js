@@ -18,9 +18,9 @@ const Item = (props) => {
       <p className="item-title" onClick={openItem}>{title} </p>
       {currItem && currItem.id === id ?
       <button className="icon" id={id} onClick={closeItem}>
-        <i className="fa-solid fa-circle-chevron-right fa-3x"></i></button> :
+        <i className="fa-solid fa-circle-chevron-right fa-2x"></i></button> :
         <button className="icon" id={id} onClick={openItem}>
-          <i className="fa-solid fa-circle-chevron-left fa-3x"></i></button>}
+          <i className="fa-solid fa-circle-chevron-left fa-2x"></i></button>}
     </div>
   )
 }
