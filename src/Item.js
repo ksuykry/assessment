@@ -3,23 +3,24 @@ import './item.css';
 
 
 const Item = (props) => {
+  const {image, title, currItem, id, openCurrItem, closeCurrItem} = props;
   const openItem = () => {
-    props.openCurrItem(props.id);
+    openCurrItem(props.id);
   }
   const closeItem = () => {
-    props.closeCurrItem()
+    closeCurrItem()
   }
   //zip file didn't have the icons, had to grab from fontawesome
   //unfortunately, do not have fontawesome pro so used what was available
   return(
     <div className="item-container">
-      <img src={props.image} className="item-image"/>
-      <p className="item-title">{props.title}</p>
-      {props.currItem && props.currItem.id === props.id ?
-      <button className="icon" id={props.id} onClick={closeItem}>
-        <i className="fa-solid fa-circle-chevron-right fa-2xl"></i></button> :
-        <button className="icon" id={props.id} onClick={openItem}>
-          <i className="fa-solid fa-circle-chevron-left fa-2xl"></i></button>}
+      <img src={image} className="item-image" onClick={openItem}/>
+      <p className="item-title" onClick={openItem}>{title} </p>
+      {currItem && currItem.id === id ?
+      <button className="icon" id={id} onClick={closeItem}>
+        <i className="fa-solid fa-circle-chevron-right fa-3x"></i></button> :
+        <button className="icon" id={id} onClick={openItem}>
+          <i className="fa-solid fa-circle-chevron-left fa-3x"></i></button>}
     </div>
   )
 }

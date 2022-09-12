@@ -2,6 +2,9 @@
   max-height: 200px;
   max-width:150px;
 }
+.item-image:hover{
+  cursor:pointer;
+}
 .item-title{
   margin:auto;
   font-size:22px;
@@ -9,6 +12,9 @@
   font-family: "Montserrat","Lato","Work Sans",sans-serif;
   text-overflow:wrap;
   max-width:300px;
+}
+.item-title:hover{
+  cursor:pointer;
 }
 .item-container{
   margin-left:10%;
