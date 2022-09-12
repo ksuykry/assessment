@@ -41,7 +41,7 @@
   padding-left:20px;
 }
 .description-text{
-
+  font-family: "Montserrat","Lato","Work Sans",sans-serif;
 }
 .items-container{
   text-align:center;
@@ -91,11 +91,36 @@
 
 }
 .banner{
-  background-image:url("./mobile_bgs.png");
+  background-image: linear-gradient(to left, rgba(255,180,0,1), rgb(148, 43, 148), rgba(0,0,255,1));
   height:250px;
 }
 .banner-text{
   color:white;
   font:"Montserrat","Lato","Work Sans",sans-serif;
   font-weight:500;
+}
+.topnav {
+  overflow: hidden;
+}
+
+
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+.navbar{
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font:"Montserrat","Lato","Work Sans",sans-serif;
+  font-weight: 500;
+  cursor:pointer;
 }

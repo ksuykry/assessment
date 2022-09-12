@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, {useState, useEffect} from 'react';
 import Item from './Item.js';
 import ItemDescription from './ItemDescription.js';
+import Navbar from './Navbar.js';
 
 
 const Store = () => {
@@ -32,6 +33,7 @@ const Store = () => {
   return(
     <div className="container">
       <div className="banner">
+        <Navbar></Navbar>
         <h1 className="banner-text">Welcome to Amaze On!</h1>
         <p className="banner-text">We have the widest catalog of clothing, accessories and backpacks all with 2 day shipping free of charge!</p>
       </div>
