@@ -3,10 +3,14 @@ import React from 'react';
 const ItemDescription = (props) => {
   let {item} = props;
   let stars = [];
+  //makes stars for the review, couldn't find a good working way to
+  //cover half stars.  just loops to 5 and checks if the rating is lower than
+  //current iteration.
   const generateStars = () => {
     for(let i = 0; i < 5; i++){
       if(item.rating.rate > i){
-        stars.push(<span class="fa fa-star checked" style={{color:"yellow"}}></span>)
+        stars.push(<span class="fa fa-star checked"
+        style={{color:"yellow"}}></span>)
       }
       else{
         stars.push(<span class="fa fa-star"></span>)
