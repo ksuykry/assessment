@@ -12,14 +12,27 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.27.2",
     "babel-plugin-macros": "^3.1.0",
+    "cors": "^2.8.5",
+    "firebase": "^9.10.0",
     "font-awesome": "^4.7.0",
+    "mongoose": "^6.6.1",
+    "pg": "^8.8.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
+    "react-stripe-checkout": "^2.6.3",
+    "react-toastify": "^9.0.8",
+    "stripe": "^10.11.0",
+    "uuidv4": "^6.2.13",
     "web-vitals": "^2.1.4"
   },
+  "devDependencies": {
+    "concurrently": "^4.1.2"
+  },
   "scripts": {
-    "start": "react-scripts start",
+    "start-client": "react-scripts start",
+    "start-server": "node server.js",
+    "start": "concurrently \"yarn start-client\" \"yarn start-server\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

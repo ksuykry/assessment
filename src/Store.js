@@ -16,6 +16,7 @@ const Store = () => {
       console.log(error);
     })
   }
+
   const openCurrItem = (id) => {
     //finds the item in the items array and sets the current item to it
     let foundItem = items.find(item => item.id === id);
